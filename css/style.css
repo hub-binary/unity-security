@@ -9713,6 +9713,47 @@ h3 {
   }
 }
 /********** Custom CSS ************/
+
+.faq {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 15px 5px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.faq .question {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.answer {
+    height: 0px;
+    display: none;
+    margin-top: 20px;
+    padding: 15px 10px;
+    font-size: 18px;
+    transition: .3s;
+    background-color: #fff;
+}
+.answer.active {
+    height: max-content;
+    display: block;
+    border-top: 2px dashed green;
+}
+
+.fadeIn{
+    animation: fadeIn forwards 1s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
 h1,
 h2,
 h3,
